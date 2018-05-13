@@ -1,0 +1,596 @@
+2018-05-13 18:32:11,104  INFO CygprojectApplication:50 - Starting CygprojectApplication on cuiyuguandeMacBook-Pro.local with PID 9681 (/Users/cuiyuguan/Desktop/2018-05-13/cygproject/target/classes started by cuiyuguan in /Users/cuiyuguan/Desktop/2018-05-13/cygproject)
+2018-05-13 18:32:11,133  INFO CygprojectApplication:659 - No active profile set, falling back to default profiles: default
+2018-05-13 18:32:11,754  INFO AnnotationConfigServletWebServerApplicationContext:590 - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@424073ae: startup date [Sun May 13 18:32:11 CST 2018]; root of context hierarchy
+2018-05-13 18:32:15,064  INFO RepositoryConfigurationDelegate:163 - Multiple Spring Data modules found, entering strict repository configuration mode!
+2018-05-13 18:32:17,135  INFO PostProcessorRegistrationDelegate$BeanPostProcessorChecker:328 - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$8cfaf487] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-05-13 18:32:18,215  INFO TomcatWebServer:91 - Tomcat initialized with port(s): 8080 (http)
+2018-05-13 18:32:18,243  INFO Http11NioProtocol:180 - Initializing ProtocolHandler ["http-nio-8080"]
+2018-05-13 18:32:18,282  INFO StandardService:180 - Starting service [Tomcat]
+2018-05-13 18:32:18,283  INFO StandardEngine:180 - Starting Servlet Engine: Apache Tomcat/8.5.31
+2018-05-13 18:32:18,292  INFO AprLifecycleListener:180 - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/Users/cuiyuguan/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+2018-05-13 18:32:18,448  INFO [/cygproject]:180 - Initializing Spring embedded WebApplicationContext
+2018-05-13 18:32:18,448  INFO ContextLoader:285 - Root WebApplicationContext: initialization completed in 6702 ms
+2018-05-13 18:32:19,018  INFO ServletRegistrationBean:185 - Servlet dispatcherServlet mapped to [/]
+2018-05-13 18:32:19,031  INFO FilterRegistrationBean:244 - Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-05-13 18:32:19,032  INFO FilterRegistrationBean:244 - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-05-13 18:32:19,032  INFO FilterRegistrationBean:244 - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-05-13 18:32:19,033  INFO FilterRegistrationBean:244 - Mapping filter: 'requestContextFilter' to: [/*]
+2018-05-13 18:32:20,565  WARN AnnotationConfigServletWebServerApplicationContext:558 - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'appleProductMapper' defined in file [/Users/cuiyuguan/Desktop/2018-05-13/cygproject/target/classes/com/cygproject/cygproject/dao/mapper/AppleProductMapper.class]: Unsatisfied dependency expressed through bean property 'sqlSessionFactory'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [org/mybatis/spring/boot/autoconfigure/MybatisAutoConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.ibatis.session.SqlSessionFactory]: Factory method 'sqlSessionFactory' threw exception; nested exception is org.springframework.core.NestedIOException: Failed to parse config resource: class path resource [mybatis/mybatis-config.xml]; nested exception is org.apache.ibatis.builder.BuilderException: Error parsing SQL Mapper Configuration. Cause: java.io.IOException: Could not find resource mybatis/mapper/TestMapper.xml
+2018-05-13 18:32:20,613  INFO StandardService:180 - Stopping service [Tomcat]
+2018-05-13 18:32:20,720 ERROR SpringApplication:842 - Application run failed
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'appleProductMapper' defined in file [/Users/cuiyuguan/Desktop/2018-05-13/cygproject/target/classes/com/cygproject/cygproject/dao/mapper/AppleProductMapper.class]: Unsatisfied dependency expressed through bean property 'sqlSessionFactory'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [org/mybatis/spring/boot/autoconfigure/MybatisAutoConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.ibatis.session.SqlSessionFactory]: Factory method 'sqlSessionFactory' threw exception; nested exception is org.springframework.core.NestedIOException: Failed to parse config resource: class path resource [mybatis/mybatis-config.xml]; nested exception is org.apache.ibatis.builder.BuilderException: Error parsing SQL Mapper Configuration. Cause: java.io.IOException: Could not find resource mybatis/mapper/TestMapper.xml
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireByType(AbstractAutowireCapableBeanFactory.java:1443) ~[spring-beans-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1330) ~[spring-beans-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:578) ~[spring-beans-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:501) ~[spring-beans-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:317) ~[spring-beans-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:228) ~[spring-beans-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:315) ~[spring-beans-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199) ~[spring-beans-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:741) ~[spring-beans-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:869) ~[spring-context-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:550) ~[spring-context-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:140) ~[spring-boot-2.0.2.RELEASE.jar:2.0.2.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:759) [spring-boot-2.0.2.RELEASE.jar:2.0.2.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:395) [spring-boot-2.0.2.RELEASE.jar:2.0.2.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:327) [spring-boot-2.0.2.RELEASE.jar:2.0.2.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1255) [spring-boot-2.0.2.RELEASE.jar:2.0.2.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1243) [spring-boot-2.0.2.RELEASE.jar:2.0.2.RELEASE]
+	at com.cygproject.cygproject.CygprojectApplication.main(CygprojectApplication.java:12) [classes/:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_121]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_121]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_121]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_121]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49) [spring-boot-devtools-2.0.2.RELEASE.jar:2.0.2.RELEASE]
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [org/mybatis/spring/boot/autoconfigure/MybatisAutoConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.ibatis.session.SqlSessionFactory]: Factory method 'sqlSessionFactory' threw exception; nested exception is org.springframework.core.NestedIOException: Failed to parse config resource: class path resource [mybatis/mybatis-config.xml]; nested exception is org.apache.ibatis.builder.BuilderException: Error parsing SQL Mapper Configuration. Cause: java.io.IOException: Could not find resource mybatis/mapper/TestMapper.xml
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:587) ~[spring-beans-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1254) ~[spring-beans-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1103) ~[spring-beans-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:541) ~[spring-beans-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:501) ~[spring-beans-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:317) ~[spring-beans-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:228) ~[spring-beans-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:315) ~[spring-beans-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199) ~[spring-beans-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:251) ~[spring-beans-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1138) ~[spring-beans-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1065) ~[spring-beans-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireByType(AbstractAutowireCapableBeanFactory.java:1428) ~[spring-beans-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	... 22 more
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.ibatis.session.SqlSessionFactory]: Factory method 'sqlSessionFactory' threw exception; nested exception is org.springframework.core.NestedIOException: Failed to parse config resource: class path resource [mybatis/mybatis-config.xml]; nested exception is org.apache.ibatis.builder.BuilderException: Error parsing SQL Mapper Configuration. Cause: java.io.IOException: Could not find resource mybatis/mapper/TestMapper.xml
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:185) ~[spring-beans-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:579) ~[spring-beans-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1254) ~[spring-beans-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1103) ~[spring-beans-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:541) ~[spring-beans-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:501) ~[spring-beans-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:317) ~[spring-beans-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:228) ~[spring-beans-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:315) ~[spring-beans-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199) ~[spring-beans-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:251) ~[spring-beans-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1138) ~[spring-beans-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1065) ~[spring-beans-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireByType(AbstractAutowireCapableBeanFactory.java:1428) ~[spring-beans-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	... 22 more
+Caused by: org.springframework.core.NestedIOException: Failed to parse config resource: class path resource [mybatis/mybatis-config.xml]; nested exception is org.apache.ibatis.builder.BuilderException: Error parsing SQL Mapper Configuration. Cause: java.io.IOException: Could not find resource mybatis/mapper/TestMapper.xml
+	at org.mybatis.spring.SqlSessionFactoryBean.buildSqlSessionFactory(SqlSessionFactoryBean.java:500) ~[mybatis-spring-1.3.2.jar:1.3.2]
+	at org.mybatis.spring.SqlSessionFactoryBean.afterPropertiesSet(SqlSessionFactoryBean.java:380) ~[mybatis-spring-1.3.2.jar:1.3.2]
+	at org.mybatis.spring.SqlSessionFactoryBean.getObject(SqlSessionFactoryBean.java:547) ~[mybatis-spring-1.3.2.jar:1.3.2]
+	at org.mybatis.spring.boot.autoconfigure.MybatisAutoConfiguration.sqlSessionFactory(MybatisAutoConfiguration.java:153) ~[mybatis-spring-boot-autoconfigure-1.3.2.jar:1.3.2]
+	at org.mybatis.spring.boot.autoconfigure.MybatisAutoConfiguration$$EnhancerBySpringCGLIB$$bfcf45b7.CGLIB$sqlSessionFactory$1(<generated>) ~[mybatis-spring-boot-autoconfigure-1.3.2.jar:1.3.2]
+	at org.mybatis.spring.boot.autoconfigure.MybatisAutoConfiguration$$EnhancerBySpringCGLIB$$bfcf45b7$$FastClassBySpringCGLIB$$557f98ab.invoke(<generated>) ~[mybatis-spring-boot-autoconfigure-1.3.2.jar:1.3.2]
+	at org.springframework.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:228) ~[spring-core-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.springframework.context.annotation.ConfigurationClassEnhancer$BeanMethodInterceptor.intercept(ConfigurationClassEnhancer.java:361) ~[spring-context-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.mybatis.spring.boot.autoconfigure.MybatisAutoConfiguration$$EnhancerBySpringCGLIB$$bfcf45b7.sqlSessionFactory(<generated>) ~[mybatis-spring-boot-autoconfigure-1.3.2.jar:1.3.2]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_121]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_121]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_121]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_121]
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:154) ~[spring-beans-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:579) ~[spring-beans-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1254) ~[spring-beans-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1103) ~[spring-beans-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:541) ~[spring-beans-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:501) ~[spring-beans-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:317) ~[spring-beans-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:228) ~[spring-beans-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:315) ~[spring-beans-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199) ~[spring-beans-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:251) ~[spring-beans-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1138) ~[spring-beans-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1065) ~[spring-beans-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireByType(AbstractAutowireCapableBeanFactory.java:1428) ~[spring-beans-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	... 22 more
+Caused by: org.apache.ibatis.builder.BuilderException: Error parsing SQL Mapper Configuration. Cause: java.io.IOException: Could not find resource mybatis/mapper/TestMapper.xml
+	at org.apache.ibatis.builder.xml.XMLConfigBuilder.parseConfiguration(XMLConfigBuilder.java:121) ~[mybatis-3.4.6.jar:3.4.6]
+	at org.apache.ibatis.builder.xml.XMLConfigBuilder.parse(XMLConfigBuilder.java:99) ~[mybatis-3.4.6.jar:3.4.6]
+	at org.mybatis.spring.SqlSessionFactoryBean.buildSqlSessionFactory(SqlSessionFactoryBean.java:494) ~[mybatis-spring-1.3.2.jar:1.3.2]
+	at org.mybatis.spring.SqlSessionFactoryBean.afterPropertiesSet(SqlSessionFactoryBean.java:380) ~[mybatis-spring-1.3.2.jar:1.3.2]
+	at org.mybatis.spring.SqlSessionFactoryBean.getObject(SqlSessionFactoryBean.java:547) ~[mybatis-spring-1.3.2.jar:1.3.2]
+	at org.mybatis.spring.boot.autoconfigure.MybatisAutoConfiguration.sqlSessionFactory(MybatisAutoConfiguration.java:153) ~[mybatis-spring-boot-autoconfigure-1.3.2.jar:1.3.2]
+	at org.mybatis.spring.boot.autoconfigure.MybatisAutoConfiguration$$EnhancerBySpringCGLIB$$bfcf45b7.CGLIB$sqlSessionFactory$1(<generated>) ~[mybatis-spring-boot-autoconfigure-1.3.2.jar:1.3.2]
+	at org.mybatis.spring.boot.autoconfigure.MybatisAutoConfiguration$$EnhancerBySpringCGLIB$$bfcf45b7$$FastClassBySpringCGLIB$$557f98ab.invoke(<generated>) ~[mybatis-spring-boot-autoconfigure-1.3.2.jar:1.3.2]
+	at org.springframework.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:228) ~[spring-core-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.springframework.context.annotation.ConfigurationClassEnhancer$BeanMethodInterceptor.intercept(ConfigurationClassEnhancer.java:361) ~[spring-context-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.mybatis.spring.boot.autoconfigure.MybatisAutoConfiguration$$EnhancerBySpringCGLIB$$bfcf45b7.sqlSessionFactory(<generated>) ~[mybatis-spring-boot-autoconfigure-1.3.2.jar:1.3.2]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_121]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_121]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_121]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_121]
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:154) ~[spring-beans-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:579) ~[spring-beans-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1254) ~[spring-beans-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1103) ~[spring-beans-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:541) ~[spring-beans-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:501) ~[spring-beans-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:317) ~[spring-beans-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:228) ~[spring-beans-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:315) ~[spring-beans-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199) ~[spring-beans-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:251) ~[spring-beans-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1138) ~[spring-beans-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1065) ~[spring-beans-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireByType(AbstractAutowireCapableBeanFactory.java:1428) ~[spring-beans-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	... 22 more
+Caused by: java.io.IOException: Could not find resource mybatis/mapper/TestMapper.xml
+	at org.apache.ibatis.io.Resources.getResourceAsStream(Resources.java:114) ~[mybatis-3.4.6.jar:3.4.6]
+	at org.apache.ibatis.io.Resources.getResourceAsStream(Resources.java:100) ~[mybatis-3.4.6.jar:3.4.6]
+	at org.apache.ibatis.builder.xml.XMLConfigBuilder.mapperElement(XMLConfigBuilder.java:371) ~[mybatis-3.4.6.jar:3.4.6]
+	at org.apache.ibatis.builder.xml.XMLConfigBuilder.parseConfiguration(XMLConfigBuilder.java:119) ~[mybatis-3.4.6.jar:3.4.6]
+	at org.apache.ibatis.builder.xml.XMLConfigBuilder.parse(XMLConfigBuilder.java:99) ~[mybatis-3.4.6.jar:3.4.6]
+	at org.mybatis.spring.SqlSessionFactoryBean.buildSqlSessionFactory(SqlSessionFactoryBean.java:494) ~[mybatis-spring-1.3.2.jar:1.3.2]
+	at org.mybatis.spring.SqlSessionFactoryBean.afterPropertiesSet(SqlSessionFactoryBean.java:380) ~[mybatis-spring-1.3.2.jar:1.3.2]
+	at org.mybatis.spring.SqlSessionFactoryBean.getObject(SqlSessionFactoryBean.java:547) ~[mybatis-spring-1.3.2.jar:1.3.2]
+	at org.mybatis.spring.boot.autoconfigure.MybatisAutoConfiguration.sqlSessionFactory(MybatisAutoConfiguration.java:153) ~[mybatis-spring-boot-autoconfigure-1.3.2.jar:1.3.2]
+	at org.mybatis.spring.boot.autoconfigure.MybatisAutoConfiguration$$EnhancerBySpringCGLIB$$bfcf45b7.CGLIB$sqlSessionFactory$1(<generated>) ~[mybatis-spring-boot-autoconfigure-1.3.2.jar:1.3.2]
+	at org.mybatis.spring.boot.autoconfigure.MybatisAutoConfiguration$$EnhancerBySpringCGLIB$$bfcf45b7$$FastClassBySpringCGLIB$$557f98ab.invoke(<generated>) ~[mybatis-spring-boot-autoconfigure-1.3.2.jar:1.3.2]
+	at org.springframework.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:228) ~[spring-core-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.springframework.context.annotation.ConfigurationClassEnhancer$BeanMethodInterceptor.intercept(ConfigurationClassEnhancer.java:361) ~[spring-context-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.mybatis.spring.boot.autoconfigure.MybatisAutoConfiguration$$EnhancerBySpringCGLIB$$bfcf45b7.sqlSessionFactory(<generated>) ~[mybatis-spring-boot-autoconfigure-1.3.2.jar:1.3.2]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_121]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_121]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_121]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_121]
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:154) ~[spring-beans-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:579) ~[spring-beans-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1254) ~[spring-beans-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1103) ~[spring-beans-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:541) ~[spring-beans-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:501) ~[spring-beans-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:317) ~[spring-beans-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:228) ~[spring-beans-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:315) ~[spring-beans-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199) ~[spring-beans-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:251) ~[spring-beans-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1138) ~[spring-beans-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1065) ~[spring-beans-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireByType(AbstractAutowireCapableBeanFactory.java:1428) ~[spring-beans-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	... 22 more
+2018-05-13 18:34:53,728  INFO CygprojectApplication:50 - Starting CygprojectApplication on cuiyuguandeMacBook-Pro.local with PID 9686 (/Users/cuiyuguan/Desktop/2018-05-13/cygproject/target/classes started by cuiyuguan in /Users/cuiyuguan/Desktop/2018-05-13/cygproject)
+2018-05-13 18:34:53,746  INFO CygprojectApplication:659 - No active profile set, falling back to default profiles: default
+2018-05-13 18:34:54,145  INFO AnnotationConfigServletWebServerApplicationContext:590 - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@7cd9ca37: startup date [Sun May 13 18:34:54 CST 2018]; root of context hierarchy
+2018-05-13 18:34:57,552  INFO RepositoryConfigurationDelegate:163 - Multiple Spring Data modules found, entering strict repository configuration mode!
+2018-05-13 18:34:59,758  INFO PostProcessorRegistrationDelegate$BeanPostProcessorChecker:328 - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$d61b24b] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-05-13 18:35:00,837  INFO TomcatWebServer:91 - Tomcat initialized with port(s): 8080 (http)
+2018-05-13 18:35:00,888  INFO Http11NioProtocol:180 - Initializing ProtocolHandler ["http-nio-8080"]
+2018-05-13 18:35:00,917  INFO StandardService:180 - Starting service [Tomcat]
+2018-05-13 18:35:00,923  INFO StandardEngine:180 - Starting Servlet Engine: Apache Tomcat/8.5.31
+2018-05-13 18:35:00,939  INFO AprLifecycleListener:180 - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/Users/cuiyuguan/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+2018-05-13 18:35:01,135  INFO [/cygproject]:180 - Initializing Spring embedded WebApplicationContext
+2018-05-13 18:35:01,136  INFO ContextLoader:285 - Root WebApplicationContext: initialization completed in 6997 ms
+2018-05-13 18:35:01,679  INFO ServletRegistrationBean:185 - Servlet dispatcherServlet mapped to [/]
+2018-05-13 18:35:01,686  INFO FilterRegistrationBean:244 - Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-05-13 18:35:01,687  INFO FilterRegistrationBean:244 - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-05-13 18:35:01,690  INFO FilterRegistrationBean:244 - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-05-13 18:35:01,692  INFO FilterRegistrationBean:244 - Mapping filter: 'requestContextFilter' to: [/*]
+2018-05-13 18:35:03,254  WARN AnnotationConfigServletWebServerApplicationContext:558 - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'appleProductMapper' defined in file [/Users/cuiyuguan/Desktop/2018-05-13/cygproject/target/classes/com/cygproject/cygproject/dao/mapper/AppleProductMapper.class]: Unsatisfied dependency expressed through bean property 'sqlSessionFactory'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [org/mybatis/spring/boot/autoconfigure/MybatisAutoConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.ibatis.session.SqlSessionFactory]: Factory method 'sqlSessionFactory' threw exception; nested exception is org.springframework.core.NestedIOException: Failed to parse config resource: class path resource [mybatis/mybatis-config.xml]; nested exception is org.apache.ibatis.builder.BuilderException: Error parsing SQL Mapper Configuration. Cause: java.io.IOException: Could not find resource mybatis/mapper/*.xml
+2018-05-13 18:35:03,313  INFO StandardService:180 - Stopping service [Tomcat]
+2018-05-13 18:35:03,405 ERROR SpringApplication:842 - Application run failed
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'appleProductMapper' defined in file [/Users/cuiyuguan/Desktop/2018-05-13/cygproject/target/classes/com/cygproject/cygproject/dao/mapper/AppleProductMapper.class]: Unsatisfied dependency expressed through bean property 'sqlSessionFactory'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [org/mybatis/spring/boot/autoconfigure/MybatisAutoConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.ibatis.session.SqlSessionFactory]: Factory method 'sqlSessionFactory' threw exception; nested exception is org.springframework.core.NestedIOException: Failed to parse config resource: class path resource [mybatis/mybatis-config.xml]; nested exception is org.apache.ibatis.builder.BuilderException: Error parsing SQL Mapper Configuration. Cause: java.io.IOException: Could not find resource mybatis/mapper/*.xml
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireByType(AbstractAutowireCapableBeanFactory.java:1443) ~[spring-beans-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1330) ~[spring-beans-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:578) ~[spring-beans-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:501) ~[spring-beans-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:317) ~[spring-beans-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:228) ~[spring-beans-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:315) ~[spring-beans-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199) ~[spring-beans-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:741) ~[spring-beans-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:869) ~[spring-context-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:550) ~[spring-context-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:140) ~[spring-boot-2.0.2.RELEASE.jar:2.0.2.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:759) [spring-boot-2.0.2.RELEASE.jar:2.0.2.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:395) [spring-boot-2.0.2.RELEASE.jar:2.0.2.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:327) [spring-boot-2.0.2.RELEASE.jar:2.0.2.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1255) [spring-boot-2.0.2.RELEASE.jar:2.0.2.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1243) [spring-boot-2.0.2.RELEASE.jar:2.0.2.RELEASE]
+	at com.cygproject.cygproject.CygprojectApplication.main(CygprojectApplication.java:12) [classes/:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_121]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_121]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_121]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_121]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49) [spring-boot-devtools-2.0.2.RELEASE.jar:2.0.2.RELEASE]
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [org/mybatis/spring/boot/autoconfigure/MybatisAutoConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.ibatis.session.SqlSessionFactory]: Factory method 'sqlSessionFactory' threw exception; nested exception is org.springframework.core.NestedIOException: Failed to parse config resource: class path resource [mybatis/mybatis-config.xml]; nested exception is org.apache.ibatis.builder.BuilderException: Error parsing SQL Mapper Configuration. Cause: java.io.IOException: Could not find resource mybatis/mapper/*.xml
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:587) ~[spring-beans-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1254) ~[spring-beans-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1103) ~[spring-beans-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:541) ~[spring-beans-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:501) ~[spring-beans-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:317) ~[spring-beans-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:228) ~[spring-beans-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:315) ~[spring-beans-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199) ~[spring-beans-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:251) ~[spring-beans-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1138) ~[spring-beans-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1065) ~[spring-beans-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireByType(AbstractAutowireCapableBeanFactory.java:1428) ~[spring-beans-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	... 22 more
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.ibatis.session.SqlSessionFactory]: Factory method 'sqlSessionFactory' threw exception; nested exception is org.springframework.core.NestedIOException: Failed to parse config resource: class path resource [mybatis/mybatis-config.xml]; nested exception is org.apache.ibatis.builder.BuilderException: Error parsing SQL Mapper Configuration. Cause: java.io.IOException: Could not find resource mybatis/mapper/*.xml
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:185) ~[spring-beans-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:579) ~[spring-beans-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1254) ~[spring-beans-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1103) ~[spring-beans-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:541) ~[spring-beans-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:501) ~[spring-beans-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:317) ~[spring-beans-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:228) ~[spring-beans-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:315) ~[spring-beans-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199) ~[spring-beans-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:251) ~[spring-beans-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1138) ~[spring-beans-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1065) ~[spring-beans-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireByType(AbstractAutowireCapableBeanFactory.java:1428) ~[spring-beans-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	... 22 more
+Caused by: org.springframework.core.NestedIOException: Failed to parse config resource: class path resource [mybatis/mybatis-config.xml]; nested exception is org.apache.ibatis.builder.BuilderException: Error parsing SQL Mapper Configuration. Cause: java.io.IOException: Could not find resource mybatis/mapper/*.xml
+	at org.mybatis.spring.SqlSessionFactoryBean.buildSqlSessionFactory(SqlSessionFactoryBean.java:500) ~[mybatis-spring-1.3.2.jar:1.3.2]
+	at org.mybatis.spring.SqlSessionFactoryBean.afterPropertiesSet(SqlSessionFactoryBean.java:380) ~[mybatis-spring-1.3.2.jar:1.3.2]
+	at org.mybatis.spring.SqlSessionFactoryBean.getObject(SqlSessionFactoryBean.java:547) ~[mybatis-spring-1.3.2.jar:1.3.2]
+	at org.mybatis.spring.boot.autoconfigure.MybatisAutoConfiguration.sqlSessionFactory(MybatisAutoConfiguration.java:153) ~[mybatis-spring-boot-autoconfigure-1.3.2.jar:1.3.2]
+	at org.mybatis.spring.boot.autoconfigure.MybatisAutoConfiguration$$EnhancerBySpringCGLIB$$4036037b.CGLIB$sqlSessionFactory$0(<generated>) ~[mybatis-spring-boot-autoconfigure-1.3.2.jar:1.3.2]
+	at org.mybatis.spring.boot.autoconfigure.MybatisAutoConfiguration$$EnhancerBySpringCGLIB$$4036037b$$FastClassBySpringCGLIB$$2dea24db.invoke(<generated>) ~[mybatis-spring-boot-autoconfigure-1.3.2.jar:1.3.2]
+	at org.springframework.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:228) ~[spring-core-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.springframework.context.annotation.ConfigurationClassEnhancer$BeanMethodInterceptor.intercept(ConfigurationClassEnhancer.java:361) ~[spring-context-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.mybatis.spring.boot.autoconfigure.MybatisAutoConfiguration$$EnhancerBySpringCGLIB$$4036037b.sqlSessionFactory(<generated>) ~[mybatis-spring-boot-autoconfigure-1.3.2.jar:1.3.2]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_121]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_121]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_121]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_121]
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:154) ~[spring-beans-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:579) ~[spring-beans-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1254) ~[spring-beans-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1103) ~[spring-beans-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:541) ~[spring-beans-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:501) ~[spring-beans-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:317) ~[spring-beans-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:228) ~[spring-beans-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:315) ~[spring-beans-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199) ~[spring-beans-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:251) ~[spring-beans-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1138) ~[spring-beans-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1065) ~[spring-beans-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireByType(AbstractAutowireCapableBeanFactory.java:1428) ~[spring-beans-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	... 22 more
+Caused by: org.apache.ibatis.builder.BuilderException: Error parsing SQL Mapper Configuration. Cause: java.io.IOException: Could not find resource mybatis/mapper/*.xml
+	at org.apache.ibatis.builder.xml.XMLConfigBuilder.parseConfiguration(XMLConfigBuilder.java:121) ~[mybatis-3.4.6.jar:3.4.6]
+	at org.apache.ibatis.builder.xml.XMLConfigBuilder.parse(XMLConfigBuilder.java:99) ~[mybatis-3.4.6.jar:3.4.6]
+	at org.mybatis.spring.SqlSessionFactoryBean.buildSqlSessionFactory(SqlSessionFactoryBean.java:494) ~[mybatis-spring-1.3.2.jar:1.3.2]
+	at org.mybatis.spring.SqlSessionFactoryBean.afterPropertiesSet(SqlSessionFactoryBean.java:380) ~[mybatis-spring-1.3.2.jar:1.3.2]
+	at org.mybatis.spring.SqlSessionFactoryBean.getObject(SqlSessionFactoryBean.java:547) ~[mybatis-spring-1.3.2.jar:1.3.2]
+	at org.mybatis.spring.boot.autoconfigure.MybatisAutoConfiguration.sqlSessionFactory(MybatisAutoConfiguration.java:153) ~[mybatis-spring-boot-autoconfigure-1.3.2.jar:1.3.2]
+	at org.mybatis.spring.boot.autoconfigure.MybatisAutoConfiguration$$EnhancerBySpringCGLIB$$4036037b.CGLIB$sqlSessionFactory$0(<generated>) ~[mybatis-spring-boot-autoconfigure-1.3.2.jar:1.3.2]
+	at org.mybatis.spring.boot.autoconfigure.MybatisAutoConfiguration$$EnhancerBySpringCGLIB$$4036037b$$FastClassBySpringCGLIB$$2dea24db.invoke(<generated>) ~[mybatis-spring-boot-autoconfigure-1.3.2.jar:1.3.2]
+	at org.springframework.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:228) ~[spring-core-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.springframework.context.annotation.ConfigurationClassEnhancer$BeanMethodInterceptor.intercept(ConfigurationClassEnhancer.java:361) ~[spring-context-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.mybatis.spring.boot.autoconfigure.MybatisAutoConfiguration$$EnhancerBySpringCGLIB$$4036037b.sqlSessionFactory(<generated>) ~[mybatis-spring-boot-autoconfigure-1.3.2.jar:1.3.2]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_121]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_121]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_121]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_121]
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:154) ~[spring-beans-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:579) ~[spring-beans-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1254) ~[spring-beans-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1103) ~[spring-beans-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:541) ~[spring-beans-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:501) ~[spring-beans-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:317) ~[spring-beans-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:228) ~[spring-beans-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:315) ~[spring-beans-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199) ~[spring-beans-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:251) ~[spring-beans-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1138) ~[spring-beans-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1065) ~[spring-beans-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireByType(AbstractAutowireCapableBeanFactory.java:1428) ~[spring-beans-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	... 22 more
+Caused by: java.io.IOException: Could not find resource mybatis/mapper/*.xml
+	at org.apache.ibatis.io.Resources.getResourceAsStream(Resources.java:114) ~[mybatis-3.4.6.jar:3.4.6]
+	at org.apache.ibatis.io.Resources.getResourceAsStream(Resources.java:100) ~[mybatis-3.4.6.jar:3.4.6]
+	at org.apache.ibatis.builder.xml.XMLConfigBuilder.mapperElement(XMLConfigBuilder.java:371) ~[mybatis-3.4.6.jar:3.4.6]
+	at org.apache.ibatis.builder.xml.XMLConfigBuilder.parseConfiguration(XMLConfigBuilder.java:119) ~[mybatis-3.4.6.jar:3.4.6]
+	at org.apache.ibatis.builder.xml.XMLConfigBuilder.parse(XMLConfigBuilder.java:99) ~[mybatis-3.4.6.jar:3.4.6]
+	at org.mybatis.spring.SqlSessionFactoryBean.buildSqlSessionFactory(SqlSessionFactoryBean.java:494) ~[mybatis-spring-1.3.2.jar:1.3.2]
+	at org.mybatis.spring.SqlSessionFactoryBean.afterPropertiesSet(SqlSessionFactoryBean.java:380) ~[mybatis-spring-1.3.2.jar:1.3.2]
+	at org.mybatis.spring.SqlSessionFactoryBean.getObject(SqlSessionFactoryBean.java:547) ~[mybatis-spring-1.3.2.jar:1.3.2]
+	at org.mybatis.spring.boot.autoconfigure.MybatisAutoConfiguration.sqlSessionFactory(MybatisAutoConfiguration.java:153) ~[mybatis-spring-boot-autoconfigure-1.3.2.jar:1.3.2]
+	at org.mybatis.spring.boot.autoconfigure.MybatisAutoConfiguration$$EnhancerBySpringCGLIB$$4036037b.CGLIB$sqlSessionFactory$0(<generated>) ~[mybatis-spring-boot-autoconfigure-1.3.2.jar:1.3.2]
+	at org.mybatis.spring.boot.autoconfigure.MybatisAutoConfiguration$$EnhancerBySpringCGLIB$$4036037b$$FastClassBySpringCGLIB$$2dea24db.invoke(<generated>) ~[mybatis-spring-boot-autoconfigure-1.3.2.jar:1.3.2]
+	at org.springframework.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:228) ~[spring-core-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.springframework.context.annotation.ConfigurationClassEnhancer$BeanMethodInterceptor.intercept(ConfigurationClassEnhancer.java:361) ~[spring-context-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.mybatis.spring.boot.autoconfigure.MybatisAutoConfiguration$$EnhancerBySpringCGLIB$$4036037b.sqlSessionFactory(<generated>) ~[mybatis-spring-boot-autoconfigure-1.3.2.jar:1.3.2]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_121]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_121]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_121]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_121]
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:154) ~[spring-beans-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:579) ~[spring-beans-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1254) ~[spring-beans-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1103) ~[spring-beans-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:541) ~[spring-beans-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:501) ~[spring-beans-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:317) ~[spring-beans-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:228) ~[spring-beans-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:315) ~[spring-beans-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199) ~[spring-beans-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:251) ~[spring-beans-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1138) ~[spring-beans-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1065) ~[spring-beans-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireByType(AbstractAutowireCapableBeanFactory.java:1428) ~[spring-beans-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	... 22 more
+2018-05-13 18:36:04,221  INFO CygprojectApplication:50 - Starting CygprojectApplication on cuiyuguandeMacBook-Pro.local with PID 9689 (/Users/cuiyuguan/Desktop/2018-05-13/cygproject/target/classes started by cuiyuguan in /Users/cuiyuguan/Desktop/2018-05-13/cygproject)
+2018-05-13 18:36:04,226  INFO CygprojectApplication:659 - No active profile set, falling back to default profiles: default
+2018-05-13 18:36:04,572  INFO AnnotationConfigServletWebServerApplicationContext:590 - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@8474908: startup date [Sun May 13 18:36:04 CST 2018]; root of context hierarchy
+2018-05-13 18:36:07,238  INFO RepositoryConfigurationDelegate:163 - Multiple Spring Data modules found, entering strict repository configuration mode!
+2018-05-13 18:36:08,984  INFO PostProcessorRegistrationDelegate$BeanPostProcessorChecker:328 - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$5488f526] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-05-13 18:36:09,925  INFO TomcatWebServer:91 - Tomcat initialized with port(s): 8080 (http)
+2018-05-13 18:36:09,975  INFO Http11NioProtocol:180 - Initializing ProtocolHandler ["http-nio-8080"]
+2018-05-13 18:36:09,992  INFO StandardService:180 - Starting service [Tomcat]
+2018-05-13 18:36:09,994  INFO StandardEngine:180 - Starting Servlet Engine: Apache Tomcat/8.5.31
+2018-05-13 18:36:10,012  INFO AprLifecycleListener:180 - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/Users/cuiyuguan/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+2018-05-13 18:36:10,172  INFO [/cygproject]:180 - Initializing Spring embedded WebApplicationContext
+2018-05-13 18:36:10,174  INFO ContextLoader:285 - Root WebApplicationContext: initialization completed in 5692 ms
+2018-05-13 18:36:10,650  INFO ServletRegistrationBean:185 - Servlet dispatcherServlet mapped to [/]
+2018-05-13 18:36:10,659  INFO FilterRegistrationBean:244 - Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-05-13 18:36:10,660  INFO FilterRegistrationBean:244 - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-05-13 18:36:10,661  INFO FilterRegistrationBean:244 - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-05-13 18:36:10,661  INFO FilterRegistrationBean:244 - Mapping filter: 'requestContextFilter' to: [/*]
+2018-05-13 18:36:12,454  INFO SimpleUrlHandlerMapping:373 - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-05-13 18:36:13,187  INFO RequestMappingHandlerAdapter:574 - Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@8474908: startup date [Sun May 13 18:36:04 CST 2018]; root of context hierarchy
+2018-05-13 18:36:13,361  INFO RequestMappingHandlerMapping:547 - Mapped "{[/manage/appver]}" onto public java.util.Map<java.lang.String, java.lang.String> com.cygproject.cygproject.controller.TestController.appver(javax.servlet.http.HttpServletRequest)
+2018-05-13 18:36:13,370  INFO RequestMappingHandlerMapping:547 - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-05-13 18:36:13,372  INFO RequestMappingHandlerMapping:547 - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-05-13 18:36:13,426  INFO SimpleUrlHandlerMapping:373 - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-05-13 18:36:13,428  INFO SimpleUrlHandlerMapping:373 - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-05-13 18:36:14,652  INFO OptionalLiveReloadServer:57 - LiveReload server is running on port 35729
+2018-05-13 18:36:14,734  INFO AnnotationMBeanExporter:433 - Registering beans for JMX exposure on startup
+2018-05-13 18:36:14,736  INFO AnnotationMBeanExporter:895 - Bean with name 'dataSource' has been autodetected for JMX exposure
+2018-05-13 18:36:14,750  INFO AnnotationMBeanExporter:668 - Located MBean 'dataSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=dataSource,type=DruidDataSource]
+2018-05-13 18:36:14,778  INFO Http11NioProtocol:180 - Starting ProtocolHandler ["http-nio-8080"]
+2018-05-13 18:36:14,830  INFO NioSelectorPool:180 - Using a shared selector for servlet write/read
+2018-05-13 18:36:14,869  INFO TomcatWebServer:206 - Tomcat started on port(s): 8080 (http) with context path '/cygproject'
+2018-05-13 18:36:14,880  INFO CygprojectApplication:59 - Started CygprojectApplication in 12.766 seconds (JVM running for 16.297)
+2018-05-13 18:56:48,887  INFO AnnotationConfigServletWebServerApplicationContext:993 - Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@8474908: startup date [Sun May 13 18:36:04 CST 2018]; root of context hierarchy
+2018-05-13 18:56:48,900  INFO AnnotationMBeanExporter:451 - Unregistering JMX-exposed beans on shutdown
+2018-05-13 18:56:48,902  INFO AnnotationMBeanExporter:183 - Unregistering JMX-exposed beans
+2018-05-13 18:57:59,776  INFO CygprojectApplication:50 - Starting CygprojectApplication on cuiyuguandeMacBook-Pro.local with PID 9714 (/Users/cuiyuguan/Desktop/2018-05-13/cygproject/target/classes started by cuiyuguan in /Users/cuiyuguan/Desktop/2018-05-13/cygproject)
+2018-05-13 18:57:59,785  INFO CygprojectApplication:659 - No active profile set, falling back to default profiles: default
+2018-05-13 18:58:00,182  INFO AnnotationConfigServletWebServerApplicationContext:590 - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@7af9b1e5: startup date [Sun May 13 18:58:00 CST 2018]; root of context hierarchy
+2018-05-13 18:58:02,651  INFO RepositoryConfigurationDelegate:163 - Multiple Spring Data modules found, entering strict repository configuration mode!
+2018-05-13 18:58:04,402  INFO PostProcessorRegistrationDelegate$BeanPostProcessorChecker:328 - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$f803a261] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-05-13 18:58:05,350  INFO TomcatWebServer:91 - Tomcat initialized with port(s): 8080 (http)
+2018-05-13 18:58:05,386  INFO Http11NioProtocol:180 - Initializing ProtocolHandler ["http-nio-8080"]
+2018-05-13 18:58:05,412  INFO StandardService:180 - Starting service [Tomcat]
+2018-05-13 18:58:05,414  INFO StandardEngine:180 - Starting Servlet Engine: Apache Tomcat/8.5.31
+2018-05-13 18:58:05,422  INFO AprLifecycleListener:180 - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/Users/cuiyuguan/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+2018-05-13 18:58:05,550  INFO [/cygproject]:180 - Initializing Spring embedded WebApplicationContext
+2018-05-13 18:58:05,551  INFO ContextLoader:285 - Root WebApplicationContext: initialization completed in 5374 ms
+2018-05-13 18:58:05,901  INFO ServletRegistrationBean:185 - Servlet dispatcherServlet mapped to [/]
+2018-05-13 18:58:05,906  INFO FilterRegistrationBean:244 - Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-05-13 18:58:05,907  INFO FilterRegistrationBean:244 - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-05-13 18:58:05,908  INFO FilterRegistrationBean:244 - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-05-13 18:58:05,909  INFO FilterRegistrationBean:244 - Mapping filter: 'requestContextFilter' to: [/*]
+2018-05-13 18:58:07,627  INFO SimpleUrlHandlerMapping:373 - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-05-13 18:58:08,355  INFO RequestMappingHandlerAdapter:574 - Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@7af9b1e5: startup date [Sun May 13 18:58:00 CST 2018]; root of context hierarchy
+2018-05-13 18:58:08,537  INFO RequestMappingHandlerMapping:547 - Mapped "{[/apple/getApple]}" onto public com.cygproject.cygproject.common.ResponseBody com.cygproject.cygproject.controller.AppleProductController.findApple()
+2018-05-13 18:58:08,556  INFO RequestMappingHandlerMapping:547 - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-05-13 18:58:08,558  INFO RequestMappingHandlerMapping:547 - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-05-13 18:58:08,651  INFO SimpleUrlHandlerMapping:373 - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-05-13 18:58:08,652  INFO SimpleUrlHandlerMapping:373 - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-05-13 18:58:10,090  INFO OptionalLiveReloadServer:57 - LiveReload server is running on port 35729
+2018-05-13 18:58:10,159  INFO AnnotationMBeanExporter:433 - Registering beans for JMX exposure on startup
+2018-05-13 18:58:10,162  INFO AnnotationMBeanExporter:895 - Bean with name 'dataSource' has been autodetected for JMX exposure
+2018-05-13 18:58:10,175  INFO AnnotationMBeanExporter:668 - Located MBean 'dataSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=dataSource,type=DruidDataSource]
+2018-05-13 18:58:10,215  INFO Http11NioProtocol:180 - Starting ProtocolHandler ["http-nio-8080"]
+2018-05-13 18:58:10,259  INFO NioSelectorPool:180 - Using a shared selector for servlet write/read
+2018-05-13 18:58:10,279  INFO TomcatWebServer:206 - Tomcat started on port(s): 8080 (http) with context path '/cygproject'
+2018-05-13 18:58:10,287  INFO CygprojectApplication:59 - Started CygprojectApplication in 12.13 seconds (JVM running for 15.483)
+2018-05-13 18:59:42,964  INFO [/cygproject]:180 - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-05-13 18:59:42,968  INFO DispatcherServlet:494 - FrameworkServlet 'dispatcherServlet': initialization started
+2018-05-13 18:59:43,126  INFO DispatcherServlet:509 - FrameworkServlet 'dispatcherServlet': initialization completed in 153 ms
+2018-05-13 18:59:43,245  INFO AppleProductController:23 - getApple method start...
+2018-05-13 18:59:43,485  INFO DruidDataSource:638 - {dataSource-1} inited
+2018-05-13 19:04:53,874  INFO AppleProductController:23 - getApple method start...
+2018-05-13 19:05:52,179  INFO AppleProductController:23 - getApple method start...
+2018-05-13 19:20:53,641  INFO AnnotationConfigServletWebServerApplicationContext:993 - Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@7af9b1e5: startup date [Sun May 13 18:58:00 CST 2018]; root of context hierarchy
+2018-05-13 19:20:53,652  INFO AnnotationMBeanExporter:451 - Unregistering JMX-exposed beans on shutdown
+2018-05-13 19:20:53,654  INFO AnnotationMBeanExporter:183 - Unregistering JMX-exposed beans
+2018-05-13 19:20:53,699  INFO DruidDataSource:1288 - {dataSource-1} closed
+2018-05-13 19:21:11,180  INFO CygprojectApplication:50 - Starting CygprojectApplication on cuiyuguandeMacBook-Pro.local with PID 9787 (/Users/cuiyuguan/Desktop/2018-05-13/cygproject/target/classes started by cuiyuguan in /Users/cuiyuguan/Desktop/2018-05-13/cygproject)
+2018-05-13 19:21:11,201  INFO CygprojectApplication:659 - No active profile set, falling back to default profiles: default
+2018-05-13 19:21:11,615  INFO AnnotationConfigServletWebServerApplicationContext:590 - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@21ca88b3: startup date [Sun May 13 19:21:11 CST 2018]; root of context hierarchy
+2018-05-13 19:21:14,176  INFO RepositoryConfigurationDelegate:163 - Multiple Spring Data modules found, entering strict repository configuration mode!
+2018-05-13 19:21:15,814  INFO PostProcessorRegistrationDelegate$BeanPostProcessorChecker:328 - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$d942c74] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-05-13 19:21:16,822  INFO TomcatWebServer:91 - Tomcat initialized with port(s): 8080 (http)
+2018-05-13 19:21:16,853  INFO Http11NioProtocol:180 - Initializing ProtocolHandler ["http-nio-8080"]
+2018-05-13 19:21:16,866  INFO StandardService:180 - Starting service [Tomcat]
+2018-05-13 19:21:16,867  INFO StandardEngine:180 - Starting Servlet Engine: Apache Tomcat/8.5.31
+2018-05-13 19:21:16,891  INFO AprLifecycleListener:180 - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/Users/cuiyuguan/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+2018-05-13 19:21:17,217  INFO [/cygproject]:180 - Initializing Spring embedded WebApplicationContext
+2018-05-13 19:21:17,217  INFO ContextLoader:285 - Root WebApplicationContext: initialization completed in 5622 ms
+2018-05-13 19:21:18,003  INFO ServletRegistrationBean:185 - Servlet dispatcherServlet mapped to [/]
+2018-05-13 19:21:18,048  INFO FilterRegistrationBean:244 - Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-05-13 19:21:18,054  INFO FilterRegistrationBean:244 - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-05-13 19:21:18,054  INFO FilterRegistrationBean:244 - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-05-13 19:21:18,055  INFO FilterRegistrationBean:244 - Mapping filter: 'requestContextFilter' to: [/*]
+2018-05-13 19:21:21,131  INFO SimpleUrlHandlerMapping:373 - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-05-13 19:21:21,713  INFO RequestMappingHandlerAdapter:574 - Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@21ca88b3: startup date [Sun May 13 19:21:11 CST 2018]; root of context hierarchy
+2018-05-13 19:21:21,811  INFO RequestMappingHandlerMapping:547 - Mapped "{[/apple/getApple]}" onto public com.cygproject.cygproject.common.ResponseBody com.cygproject.cygproject.controller.AppleProductController.findApple()
+2018-05-13 19:21:21,820  INFO RequestMappingHandlerMapping:547 - Mapped "{[/apple/getAppleByName],methods=[GET]}" onto public com.cygproject.cygproject.common.ResponseBody com.cygproject.cygproject.controller.AppleProductController.findAppleByName(java.lang.String)
+2018-05-13 19:21:21,825  INFO RequestMappingHandlerMapping:547 - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-05-13 19:21:21,834  INFO RequestMappingHandlerMapping:547 - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-05-13 19:21:21,934  INFO SimpleUrlHandlerMapping:373 - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-05-13 19:21:21,935  INFO SimpleUrlHandlerMapping:373 - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-05-13 19:21:23,128  INFO OptionalLiveReloadServer:57 - LiveReload server is running on port 35729
+2018-05-13 19:21:23,190  INFO AnnotationMBeanExporter:433 - Registering beans for JMX exposure on startup
+2018-05-13 19:21:23,196  INFO AnnotationMBeanExporter:895 - Bean with name 'dataSource' has been autodetected for JMX exposure
+2018-05-13 19:21:23,204  INFO AnnotationMBeanExporter:668 - Located MBean 'dataSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=dataSource,type=DruidDataSource]
+2018-05-13 19:21:23,231  INFO Http11NioProtocol:180 - Starting ProtocolHandler ["http-nio-8080"]
+2018-05-13 19:21:23,285  INFO NioSelectorPool:180 - Using a shared selector for servlet write/read
+2018-05-13 19:21:23,298  INFO TomcatWebServer:206 - Tomcat started on port(s): 8080 (http) with context path '/cygproject'
+2018-05-13 19:21:23,307  INFO CygprojectApplication:59 - Started CygprojectApplication in 14.027 seconds (JVM running for 17.419)
+2018-05-13 19:21:36,984  INFO [/cygproject]:180 - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-05-13 19:21:36,984  INFO DispatcherServlet:494 - FrameworkServlet 'dispatcherServlet': initialization started
+2018-05-13 19:21:37,051  INFO DispatcherServlet:509 - FrameworkServlet 'dispatcherServlet': initialization completed in 66 ms
+2018-05-13 19:21:37,162  INFO AppleProductController:24 - getApple method start...
+2018-05-13 19:21:37,379  INFO DruidDataSource:638 - {dataSource-1} inited
+2018-05-13 19:21:46,139  INFO AppleProductController:24 - getApple method start...
+2018-05-13 19:21:55,180  INFO AppleProductController:24 - getApple method start...
+2018-05-13 19:25:15,098  INFO AnnotationConfigServletWebServerApplicationContext:993 - Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@21ca88b3: startup date [Sun May 13 19:21:11 CST 2018]; root of context hierarchy
+2018-05-13 19:25:15,113  INFO AnnotationMBeanExporter:451 - Unregistering JMX-exposed beans on shutdown
+2018-05-13 19:25:15,116  INFO AnnotationMBeanExporter:183 - Unregistering JMX-exposed beans
+2018-05-13 19:25:15,156  INFO DruidDataSource:1288 - {dataSource-1} closed
+2018-05-13 19:25:33,324  INFO CygprojectApplication:50 - Starting CygprojectApplication on cuiyuguandeMacBook-Pro.local with PID 9800 (/Users/cuiyuguan/Desktop/2018-05-13/cygproject/target/classes started by cuiyuguan in /Users/cuiyuguan/Desktop/2018-05-13/cygproject)
+2018-05-13 19:25:33,343  INFO CygprojectApplication:659 - No active profile set, falling back to default profiles: default
+2018-05-13 19:25:33,686  INFO AnnotationConfigServletWebServerApplicationContext:590 - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@3cd6f2ae: startup date [Sun May 13 19:25:33 CST 2018]; root of context hierarchy
+2018-05-13 19:25:37,095  INFO RepositoryConfigurationDelegate:163 - Multiple Spring Data modules found, entering strict repository configuration mode!
+2018-05-13 19:25:38,562  INFO PostProcessorRegistrationDelegate$BeanPostProcessorChecker:328 - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$5518a370] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-05-13 19:25:39,331  INFO TomcatWebServer:91 - Tomcat initialized with port(s): 8080 (http)
+2018-05-13 19:25:39,365  INFO Http11NioProtocol:180 - Initializing ProtocolHandler ["http-nio-8080"]
+2018-05-13 19:25:39,388  INFO StandardService:180 - Starting service [Tomcat]
+2018-05-13 19:25:39,390  INFO StandardEngine:180 - Starting Servlet Engine: Apache Tomcat/8.5.31
+2018-05-13 19:25:39,416  INFO AprLifecycleListener:180 - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/Users/cuiyuguan/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+2018-05-13 19:25:39,636  INFO [/cygproject]:180 - Initializing Spring embedded WebApplicationContext
+2018-05-13 19:25:39,638  INFO ContextLoader:285 - Root WebApplicationContext: initialization completed in 5958 ms
+2018-05-13 19:25:40,026  INFO ServletRegistrationBean:185 - Servlet dispatcherServlet mapped to [/]
+2018-05-13 19:25:40,043  INFO FilterRegistrationBean:244 - Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-05-13 19:25:40,046  INFO FilterRegistrationBean:244 - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-05-13 19:25:40,047  INFO FilterRegistrationBean:244 - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-05-13 19:25:40,048  INFO FilterRegistrationBean:244 - Mapping filter: 'requestContextFilter' to: [/*]
+2018-05-13 19:25:42,460  INFO SimpleUrlHandlerMapping:373 - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-05-13 19:25:43,096  INFO RequestMappingHandlerAdapter:574 - Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@3cd6f2ae: startup date [Sun May 13 19:25:33 CST 2018]; root of context hierarchy
+2018-05-13 19:25:43,259  INFO RequestMappingHandlerMapping:547 - Mapped "{[/apple/getApple]}" onto public com.cygproject.cygproject.common.ResponseBody com.cygproject.cygproject.controller.AppleProductController.findApple()
+2018-05-13 19:25:43,262  INFO RequestMappingHandlerMapping:547 - Mapped "{[/apple/getAppleByName],methods=[GET]}" onto public com.cygproject.cygproject.common.ResponseBody com.cygproject.cygproject.controller.AppleProductController.findAppleByName(java.lang.String)
+2018-05-13 19:25:43,269  INFO RequestMappingHandlerMapping:547 - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-05-13 19:25:43,270  INFO RequestMappingHandlerMapping:547 - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-05-13 19:25:43,373  INFO SimpleUrlHandlerMapping:373 - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-05-13 19:25:43,375  INFO SimpleUrlHandlerMapping:373 - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-05-13 19:25:44,713  INFO OptionalLiveReloadServer:57 - LiveReload server is running on port 35729
+2018-05-13 19:25:44,788  INFO AnnotationMBeanExporter:433 - Registering beans for JMX exposure on startup
+2018-05-13 19:25:44,791  INFO AnnotationMBeanExporter:895 - Bean with name 'dataSource' has been autodetected for JMX exposure
+2018-05-13 19:25:44,806  INFO AnnotationMBeanExporter:668 - Located MBean 'dataSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=dataSource,type=DruidDataSource]
+2018-05-13 19:25:44,840  INFO Http11NioProtocol:180 - Starting ProtocolHandler ["http-nio-8080"]
+2018-05-13 19:25:44,885  INFO NioSelectorPool:180 - Using a shared selector for servlet write/read
+2018-05-13 19:25:44,905  INFO TomcatWebServer:206 - Tomcat started on port(s): 8080 (http) with context path '/cygproject'
+2018-05-13 19:25:44,914  INFO CygprojectApplication:59 - Started CygprojectApplication in 13.955 seconds (JVM running for 19.496)
+2018-05-13 19:25:57,342  INFO [/cygproject]:180 - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-05-13 19:25:57,342  INFO DispatcherServlet:494 - FrameworkServlet 'dispatcherServlet': initialization started
+2018-05-13 19:25:57,482  INFO DispatcherServlet:509 - FrameworkServlet 'dispatcherServlet': initialization completed in 139 ms
+2018-05-13 19:25:57,638  INFO AppleProductController:24 - getApple method start...
+2018-05-13 19:25:57,914  INFO DruidDataSource:638 - {dataSource-1} inited
+2018-05-13 19:26:03,448  INFO AppleProductController:24 - getApple method start...
+2018-05-13 19:26:26,848  WARN DefaultHandlerExceptionResolver:192 - Resolved exception caused by Handler execution: org.springframework.web.bind.MissingPathVariableException: Missing URI template variable 'name' for method parameter of type String
+2018-05-13 19:27:33,142  INFO AnnotationConfigServletWebServerApplicationContext:993 - Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@3cd6f2ae: startup date [Sun May 13 19:25:33 CST 2018]; root of context hierarchy
+2018-05-13 19:27:33,161  INFO AnnotationMBeanExporter:451 - Unregistering JMX-exposed beans on shutdown
+2018-05-13 19:27:33,164  INFO AnnotationMBeanExporter:183 - Unregistering JMX-exposed beans
+2018-05-13 19:27:33,189  INFO DruidDataSource:1288 - {dataSource-1} closed
+2018-05-13 19:28:00,098  INFO CygprojectApplication:50 - Starting CygprojectApplication on cuiyuguandeMacBook-Pro.local with PID 9807 (/Users/cuiyuguan/Desktop/2018-05-13/cygproject/target/classes started by cuiyuguan in /Users/cuiyuguan/Desktop/2018-05-13/cygproject)
+2018-05-13 19:28:00,110  INFO CygprojectApplication:659 - No active profile set, falling back to default profiles: default
+2018-05-13 19:28:00,445  INFO AnnotationConfigServletWebServerApplicationContext:590 - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@262c783f: startup date [Sun May 13 19:28:00 CST 2018]; root of context hierarchy
+2018-05-13 19:28:05,076  INFO RepositoryConfigurationDelegate:163 - Multiple Spring Data modules found, entering strict repository configuration mode!
+2018-05-13 19:28:07,184  INFO PostProcessorRegistrationDelegate$BeanPostProcessorChecker:328 - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$2ce0c5a8] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-05-13 19:28:08,628  INFO TomcatWebServer:91 - Tomcat initialized with port(s): 8080 (http)
+2018-05-13 19:28:08,679  INFO Http11NioProtocol:180 - Initializing ProtocolHandler ["http-nio-8080"]
+2018-05-13 19:28:08,710  INFO StandardService:180 - Starting service [Tomcat]
+2018-05-13 19:28:08,713  INFO StandardEngine:180 - Starting Servlet Engine: Apache Tomcat/8.5.31
+2018-05-13 19:28:08,730  INFO AprLifecycleListener:180 - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/Users/cuiyuguan/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+2018-05-13 19:28:08,928  INFO [/cygproject]:180 - Initializing Spring embedded WebApplicationContext
+2018-05-13 19:28:08,929  INFO ContextLoader:285 - Root WebApplicationContext: initialization completed in 8491 ms
+2018-05-13 19:28:09,534  INFO ServletRegistrationBean:185 - Servlet dispatcherServlet mapped to [/]
+2018-05-13 19:28:09,544  INFO FilterRegistrationBean:244 - Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-05-13 19:28:09,545  INFO FilterRegistrationBean:244 - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-05-13 19:28:09,545  INFO FilterRegistrationBean:244 - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-05-13 19:28:09,546  INFO FilterRegistrationBean:244 - Mapping filter: 'requestContextFilter' to: [/*]
+2018-05-13 19:28:12,082  INFO SimpleUrlHandlerMapping:373 - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-05-13 19:28:12,897  INFO RequestMappingHandlerAdapter:574 - Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@262c783f: startup date [Sun May 13 19:28:00 CST 2018]; root of context hierarchy
+2018-05-13 19:28:13,133  INFO RequestMappingHandlerMapping:547 - Mapped "{[/apple/getAppleByName],methods=[GET]}" onto public com.cygproject.cygproject.common.ResponseBody com.cygproject.cygproject.controller.AppleProductController.findAppleByName(java.lang.String)
+2018-05-13 19:28:13,168  INFO RequestMappingHandlerMapping:547 - Mapped "{[/apple/getApple]}" onto public com.cygproject.cygproject.common.ResponseBody com.cygproject.cygproject.controller.AppleProductController.findApple()
+2018-05-13 19:28:13,177  INFO RequestMappingHandlerMapping:547 - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-05-13 19:28:13,178  INFO RequestMappingHandlerMapping:547 - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-05-13 19:28:13,287  INFO SimpleUrlHandlerMapping:373 - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-05-13 19:28:13,288  INFO SimpleUrlHandlerMapping:373 - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-05-13 19:28:14,819  INFO OptionalLiveReloadServer:57 - LiveReload server is running on port 35729
+2018-05-13 19:28:14,916  INFO AnnotationMBeanExporter:433 - Registering beans for JMX exposure on startup
+2018-05-13 19:28:14,930  INFO AnnotationMBeanExporter:895 - Bean with name 'dataSource' has been autodetected for JMX exposure
+2018-05-13 19:28:14,943  INFO AnnotationMBeanExporter:668 - Located MBean 'dataSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=dataSource,type=DruidDataSource]
+2018-05-13 19:28:14,973  INFO Http11NioProtocol:180 - Starting ProtocolHandler ["http-nio-8080"]
+2018-05-13 19:28:15,041  INFO NioSelectorPool:180 - Using a shared selector for servlet write/read
+2018-05-13 19:28:15,190  INFO TomcatWebServer:206 - Tomcat started on port(s): 8080 (http) with context path '/cygproject'
+2018-05-13 19:28:15,206  INFO CygprojectApplication:59 - Started CygprojectApplication in 17.507 seconds (JVM running for 22.843)
+2018-05-13 19:28:21,797  INFO [/cygproject]:180 - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-05-13 19:28:21,799  INFO DispatcherServlet:494 - FrameworkServlet 'dispatcherServlet': initialization started
+2018-05-13 19:28:21,945  INFO DispatcherServlet:509 - FrameworkServlet 'dispatcherServlet': initialization completed in 145 ms
+2018-05-13 19:28:32,444  INFO AppleProductController:29 - findAppleByName method start...
+2018-05-13 19:28:32,925  INFO DruidDataSource:638 - {dataSource-1} inited
+2018-05-13 19:29:51,944  INFO AnnotationConfigServletWebServerApplicationContext:993 - Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@262c783f: startup date [Sun May 13 19:28:00 CST 2018]; root of context hierarchy
+2018-05-13 19:29:51,949  INFO AnnotationMBeanExporter:451 - Unregistering JMX-exposed beans on shutdown
+2018-05-13 19:29:51,951  INFO AnnotationMBeanExporter:183 - Unregistering JMX-exposed beans
+2018-05-13 19:29:52,044  INFO DruidDataSource:1288 - {dataSource-1} closed
+2018-05-13 19:30:09,104  INFO CygprojectApplication:50 - Starting CygprojectApplication on cuiyuguandeMacBook-Pro.local with PID 9815 (/Users/cuiyuguan/Desktop/2018-05-13/cygproject/target/classes started by cuiyuguan in /Users/cuiyuguan/Desktop/2018-05-13/cygproject)
+2018-05-13 19:30:09,119  INFO CygprojectApplication:659 - No active profile set, falling back to default profiles: default
+2018-05-13 19:30:09,420  INFO AnnotationConfigServletWebServerApplicationContext:590 - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@7839fac: startup date [Sun May 13 19:30:09 CST 2018]; root of context hierarchy
+2018-05-13 19:30:12,162  INFO RepositoryConfigurationDelegate:163 - Multiple Spring Data modules found, entering strict repository configuration mode!
+2018-05-13 19:30:13,916  INFO PostProcessorRegistrationDelegate$BeanPostProcessorChecker:328 - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$fea9530f] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-05-13 19:30:14,981  INFO TomcatWebServer:91 - Tomcat initialized with port(s): 8080 (http)
+2018-05-13 19:30:15,035  INFO Http11NioProtocol:180 - Initializing ProtocolHandler ["http-nio-8080"]
+2018-05-13 19:30:15,062  INFO StandardService:180 - Starting service [Tomcat]
+2018-05-13 19:30:15,063  INFO StandardEngine:180 - Starting Servlet Engine: Apache Tomcat/8.5.31
+2018-05-13 19:30:15,083  INFO AprLifecycleListener:180 - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/Users/cuiyuguan/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+2018-05-13 19:30:15,395  INFO [/cygproject]:180 - Initializing Spring embedded WebApplicationContext
+2018-05-13 19:30:15,395  INFO ContextLoader:285 - Root WebApplicationContext: initialization completed in 5982 ms
+2018-05-13 19:30:15,931  INFO ServletRegistrationBean:185 - Servlet dispatcherServlet mapped to [/]
+2018-05-13 19:30:15,945  INFO FilterRegistrationBean:244 - Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-05-13 19:30:15,946  INFO FilterRegistrationBean:244 - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-05-13 19:30:15,947  INFO FilterRegistrationBean:244 - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-05-13 19:30:15,947  INFO FilterRegistrationBean:244 - Mapping filter: 'requestContextFilter' to: [/*]
+2018-05-13 19:30:17,965  INFO SimpleUrlHandlerMapping:373 - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-05-13 19:30:19,107  INFO RequestMappingHandlerAdapter:574 - Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@7839fac: startup date [Sun May 13 19:30:09 CST 2018]; root of context hierarchy
+2018-05-13 19:30:19,366  INFO RequestMappingHandlerMapping:547 - Mapped "{[/apple/getApple]}" onto public com.cygproject.cygproject.common.ResponseBody com.cygproject.cygproject.controller.AppleProductController.findApple()
+2018-05-13 19:30:19,387  INFO RequestMappingHandlerMapping:547 - Mapped "{[/apple/getAppleByName],methods=[GET]}" onto public com.cygproject.cygproject.common.ResponseBody com.cygproject.cygproject.controller.AppleProductController.findAppleByName(java.lang.String)
+2018-05-13 19:30:19,398  INFO RequestMappingHandlerMapping:547 - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-05-13 19:30:19,398  INFO RequestMappingHandlerMapping:547 - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-05-13 19:30:19,559  INFO SimpleUrlHandlerMapping:373 - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-05-13 19:30:19,559  INFO SimpleUrlHandlerMapping:373 - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-05-13 19:30:21,079  INFO OptionalLiveReloadServer:57 - LiveReload server is running on port 35729
+2018-05-13 19:30:21,153  INFO AnnotationMBeanExporter:433 - Registering beans for JMX exposure on startup
+2018-05-13 19:30:21,158  INFO AnnotationMBeanExporter:895 - Bean with name 'dataSource' has been autodetected for JMX exposure
+2018-05-13 19:30:21,167  INFO AnnotationMBeanExporter:668 - Located MBean 'dataSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=dataSource,type=DruidDataSource]
+2018-05-13 19:30:21,212  INFO Http11NioProtocol:180 - Starting ProtocolHandler ["http-nio-8080"]
+2018-05-13 19:30:21,253  INFO NioSelectorPool:180 - Using a shared selector for servlet write/read
+2018-05-13 19:30:21,309  INFO TomcatWebServer:206 - Tomcat started on port(s): 8080 (http) with context path '/cygproject'
+2018-05-13 19:30:21,319  INFO CygprojectApplication:59 - Started CygprojectApplication in 14.563 seconds (JVM running for 19.195)
+2018-05-13 19:30:30,567  INFO [/cygproject]:180 - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-05-13 19:30:30,567  INFO DispatcherServlet:494 - FrameworkServlet 'dispatcherServlet': initialization started
+2018-05-13 19:30:30,607  INFO DispatcherServlet:509 - FrameworkServlet 'dispatcherServlet': initialization completed in 39 ms
+2018-05-13 19:30:43,652  INFO AppleProductController:29 - findAppleByName method start...
+2018-05-13 19:30:44,050  INFO DruidDataSource:638 - {dataSource-1} inited
+2018-05-13 19:30:57,353  INFO AppleProductController:29 - findAppleByName method start...
+2018-05-13 19:31:02,486  INFO AppleProductController:29 - findAppleByName method start...
+2018-05-13 19:31:09,720  INFO AppleProductController:29 - findAppleByName method start...
+2018-05-13 19:31:14,828  INFO AppleProductController:29 - findAppleByName method start...
+2018-05-13 19:31:20,171  INFO AppleProductController:29 - findAppleByName method start...
+2018-05-13 19:31:58,708  INFO AppleProductController:29 - findAppleByName method start...
+2018-05-13 20:54:30,779  INFO AppleProductController:29 - findAppleByName method start...
+2018-05-13 20:54:37,663  INFO AppleProductController:29 - findAppleByName method start...
+2018-05-13 20:55:29,221  INFO AnnotationConfigServletWebServerApplicationContext:993 - Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@7839fac: startup date [Sun May 13 19:30:09 CST 2018]; root of context hierarchy
+2018-05-13 20:55:29,235  INFO AnnotationMBeanExporter:451 - Unregistering JMX-exposed beans on shutdown
+2018-05-13 20:55:29,236  INFO AnnotationMBeanExporter:183 - Unregistering JMX-exposed beans
+2018-05-13 20:55:29,270  INFO DruidDataSource:1288 - {dataSource-1} closed
